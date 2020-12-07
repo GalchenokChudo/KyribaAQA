@@ -57,6 +57,7 @@ public class Test {
         out.println(maz.details());
 
         toyota.calculateFuel(toyota.fuelConsumption,toyota.calculatekm(7));
-        out.println(toyota.calculatedetails());
+        //как не вводить два раза время?
+        out.println(toyota.calculatedetails(7));
     }
 }
