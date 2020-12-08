@@ -2,7 +2,7 @@ package Transport;
 
 public class Terrestrial extends Transport {
 
-    public int numberOfWheels;
+    public int numberOfWheels, capacity;
     public double fuelConsumption;
 
     public String details(){
