@@ -8,7 +8,7 @@ public class Test {
 
         Civil plain = new Civil();
         Military tank = new Military();
-        Passenger toyota = new Passenger();
+        Passenger toyota = new Passenger("Minivan", "Corolla", 6.2, 170, 7, 4, 4, 8000, 9);
         Cargo maz = new Cargo();
 
         plain.bcavailability = true;
@@ -29,15 +29,6 @@ public class Test {
         tank.minRunway = 40;
         tank.wingspan = 54.5;
 
-        toyota.bodyType = "Minivan";
-        toyota.brand = "Corolla";
-        toyota.fuelConsumption = 6.2;
-        toyota.max_speed = 170;
-        toyota.numberOfPassengers =7;
-        toyota.numberOfWheels = 4;
-        toyota.power = 4;
-        toyota.weight = 8000;
-
         maz.carryingCapacity = 100;
         maz.brand = "B9-1420/1470";
         maz.fuelConsumption = 7.1;
@@ -56,8 +47,6 @@ public class Test {
         out.println(toyota.details());
         out.println(maz.details());
 
-        toyota.calculateFuel(toyota.fuelConsumption,toyota.calculatekm(7));
-        //как не вводить два раза время?
-        out.println(toyota.calculatedetails(7));
+        out.println(toyota.calculatedetails());
     }
 }

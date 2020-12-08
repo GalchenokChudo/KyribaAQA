@@ -8,16 +8,12 @@ public class Transport {
     public String brand;
     double killopower;
 
-    public Transport(){
-
-    }
-
     public double calculatePower(int power){
         killopower = power*0.74;
         return killopower;
     }
 
     public String details(){
-        return String.format("Power: %s, Power in kV: %s, Max speed: %s, Weight: %s, Brand: %s", power, killopower, max_speed, weight, brand);
+        return String.format("Power: %s, Power in kV: %s, Max speed: %s, Weight: %s, Brand: %s", power, (double) Math.round(killopower * 100) / 100, max_speed, weight, brand);
     }
 }
