@@ -2,15 +2,21 @@ package Transport;
 
 public class Transport {
 
-    public int power;
-    public int max_speed;
-    public int weight;
-    public String brand;
+    public int power, capacity, max_speed, weight;
+    public String brand, message;
     double killopower;
 
     public double calculatePower(int power){
         killopower = power*0.74;
         return killopower;
+    }
+
+    public String checkloading(int load){
+        if (capacity <= load){
+            message = "Loading is complete";
+        } else message = "You need a bigger transport";
+
+        return String.format("%s", message);
     }
 
     public String details(){

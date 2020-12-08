@@ -41,6 +41,6 @@ public class Passenger extends Terrestrial {
     }
 
     public String calculatedetails(){
-           return String.format("За время %s ч., автомобиль %s двигаясь с максимальной скоростью %s км/ч проедет %s км и израсходует %s литров топлива.", time, brand, max_speed, (double) Math.round(km * 100) / 100, (double) Math.round(fuel * 100) / 100);
+           return String.format("For %s ч., car %s moving at max speed %s км/ч will drive %s км and will consume %s liters of fuel.", time, brand, max_speed, (double) Math.round(km * 100) / 100, (double) Math.round(fuel * 100) / 100);
     }
 }
