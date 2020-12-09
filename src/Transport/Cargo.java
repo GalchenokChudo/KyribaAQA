@@ -14,11 +14,8 @@ public class Cargo extends Terrestrial {
         this.weight = weight;
     }
 
-    public double calculatePower(){
-        return super.calculatePower(power);
-    }
-
     public String details(){
+
         return super.details() + String.format(", Carrying capacity: %s", capacity);
     }
 }

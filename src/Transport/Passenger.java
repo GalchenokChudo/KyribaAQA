@@ -21,11 +21,6 @@ public class Passenger extends Terrestrial {
 
     }
 
-    public double calculatePower(){
-
-        return super.calculatePower(power);
-    }
-
     public double calculatekm(double time){
         km = (time*max_speed)/60;
         return km;

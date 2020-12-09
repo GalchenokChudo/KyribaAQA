@@ -6,7 +6,7 @@ public class Transport {
     public String brand, message;
     double killopower;
 
-    public double calculatePower(int power){
+    public double calculatePower(){
         killopower = power*0.74;
         return killopower;
     }
