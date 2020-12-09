@@ -1,4 +1,4 @@
-package Transport;
+package Transports;
 
 public class Military extends Air {
 

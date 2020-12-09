@@ -1,4 +1,4 @@
-package Transport;
+package Transports;
 
 public class Passenger extends Terrestrial {
 
