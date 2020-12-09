@@ -23,10 +23,6 @@ public class Military extends Air {
                 return message;
         }
 
-        public double calculatePower(){
-                return super.calculatePower(power);
-        }
-
         public String details(){
                 return super.details() + String.format(", Ejection system: %s, Number of rockets: %s", ejectionSystem, numberOfRocket);
         }
