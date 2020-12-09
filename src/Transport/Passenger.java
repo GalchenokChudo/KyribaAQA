@@ -17,16 +17,16 @@ public class Passenger extends Terrestrial {
         this.power = power;
         this.weight = weight;
         this.time = time;
-        calculateFuel(fuelConsumption, calculatekm(time));
+        calculateFuel(calculatekm());
 
     }
 
-    public double calculatekm(double time){
+    public double calculatekm(){
         km = (time*max_speed)/60;
         return km;
     }
 
-    private double calculateFuel(double fuelConsumption, double km){
+    private double calculateFuel(double km){
         fuel = (fuelConsumption*km)/100;
         return fuel;
     }
